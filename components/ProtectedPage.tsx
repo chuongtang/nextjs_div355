@@ -1,18 +1,15 @@
 "use client"
 import Image from "next/image"
-import { useState } from "react"
-import list from '../assets/list.svg'
-import TBD1 from '../assets/TBD1.jpg'
-import TBD2 from '../assets/TBD2.jpg'
-import TBD3 from '../assets/TBD3.jpg'
-import TBD4 from '../assets/TBD4.jpg'
-import Updates from "@/components/Updates"
+import TBD1 from '@/app/assets/TBD1.jpg'
+import TBD2 from '@/app/assets/TBD2.jpg'
+import TBD3 from '@/app/assets/TBD3.jpg'
+import TBD4 from '@/app/assets/TBD4.jpg'
 import Exec from "@/components/Exec"
 import Bylaw from "@/components/Bylaw"
 import Seniority from "@/components/Seniority"
 import TieUp from "@/components/TieUp"
 
-const MemberResources = () => {
+const ProtectedContent = () => {
   
 
   return (
@@ -29,7 +26,7 @@ const MemberResources = () => {
           <Image
             className="mx-auto h-[26rem] w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
             src={TBD1}
-            alt="woman"
+            alt="Ai train"
             loading="lazy"
             width="640"
             height="805"
@@ -49,7 +46,7 @@ const MemberResources = () => {
           <Image
             className="mx-auto h-[26rem] w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
             src={TBD2}
-            alt="woman"
+            alt="CP train"
             loading="lazy"
             width="640"
             height="805"
@@ -69,7 +66,7 @@ const MemberResources = () => {
           <Image
             className="mx-auto h-[26rem] w-full grayscale object-cover object-top transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
             src={TBD3}
-            alt="woman"
+            alt="CP8819"
             loading="lazy"
             width="640"
             height="805"
@@ -89,7 +86,7 @@ const MemberResources = () => {
           <Image
             className="mx-auto h-[26rem] w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
             src={TBD4}
-            alt="woman"
+            alt="CP2306"
             loading="lazy"
             width="640"
             height="805"
@@ -112,4 +109,4 @@ const MemberResources = () => {
   )
 }
 
-export default MemberResources
+export default ProtectedContent

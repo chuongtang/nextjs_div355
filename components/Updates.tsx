@@ -6,7 +6,7 @@ const Updates = () => {
   return (
     
     <>
-   <Button variant="light" onPress={onOpen}>TCRC Updates</Button>
+   <Button variant="light" onPress={onOpen} className="font-sans text-md">TCRC Updates</Button>
     <Modal isOpen={isOpen} onOpenChange={onOpenChange} backdrop="blur" className="w-full h-full bg-gradient-to-br from-gray-50 to-gray-700">
       <ModalContent>
         {(onClose) => (

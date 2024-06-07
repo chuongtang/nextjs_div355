@@ -23,9 +23,10 @@ export default async function AuthButton() {
       <NavbarContent justify="end">
         {user ? <div className="flex items-center gap-4">
           <form action={signOut}>
-            <button className="inline-flex bg-amber-500 border-0 rounded-lg p-2 ml-2 text-white">
+            <button title=" 📤Click to sign out " className="inline-flex bg-amber-500 border-0 rounded-lg p-2 ml-2 text-white">
               Logout
-              <p className="ml-2 italic shadow-md cursor-pointer font-semibold tracking-tighter text-sm">{user.email}</p>
+              <p className="ml-2 italic cursor-pointer text-md">
+                {user.email?.slice(0, 5)}...</p>
               {/* <p>{user.last_sign_in_at}</p> ⬅️ use this to pop up msg for logging in */}
             </button>
           </form>

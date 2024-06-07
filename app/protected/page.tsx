@@ -1,5 +1,7 @@
+
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
+import ProtectedContent from "@/components/ProtectedPage"
 
 export default async function ProtectedPage() {
 
@@ -17,6 +19,6 @@ export default async function ProtectedPage() {
     console.log(user, "herher is the user")
   }
   return (
-  <>TO be replace with testPage component</>    
+    <ProtectedContent />
   );
 }

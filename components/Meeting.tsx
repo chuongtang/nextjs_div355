@@ -4,8 +4,8 @@ const Meeting = () => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     return (
         <>
-            <Button variant="light" onPress={onOpen}>Meeting Schedule</Button>
-            <Modal isOpen={isOpen} onOpenChange={onOpenChange} backdrop="blur">
+            <Button variant="light" onPress={onOpen} className="font-sans text-md">Meeting Schedule</Button>
+            <Modal isOpen={isOpen} onOpenChange={onOpenChange} backdrop="blur" placement="top-center">
                 <ModalContent>
                     {(onClose) => (
                         <>

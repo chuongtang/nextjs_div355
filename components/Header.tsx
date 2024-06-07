@@ -32,7 +32,7 @@ export default function Header() {
             <Meeting />
           </NavbarItem>
           <NavbarItem>
-            <Button variant="light" size="sm">
+            <Button variant="light" size="sm" className="font-sans text-md">
               <Link color="foreground" href="https://drive.google.com/drive/folders/1ApGqFGzzXVFPvYICfUenm4Y3z3OQmYT6?usp=drive_link" target='_blank'>
                 Union Document
               </Link>
