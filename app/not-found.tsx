@@ -4,8 +4,8 @@ import ErrorTrain from "../app/assets/404Train.svg"
 import { headers } from 'next/headers'
 
 export default async function NotFound() {
-  const headersList = headers()
-  const domain = headersList.get('host')
+  // const headersList = headers()
+  // const domain = headersList.get('host')
   // const data = await getSiteData(domain)
   return (
     <div className="relative h-screen overflow-hidden rounded-lg shadow transition hover:shadow-lg  bg-gradient-to-br from-black to-gray-100">
@@ -29,7 +29,7 @@ export default async function NotFound() {
         </div>
         <h3 className="mt-10 mb-12 text-4xl text-white">404 Error</h3>
         <p className="mt-2 line-clamp-3 text-xl/relaxed text-white/95">
-          Page not-found on {domain}. Please try different route or contact the web developer
+          Page not-found. Please try different route or contact the web developer
         </p>
 
       </div>
