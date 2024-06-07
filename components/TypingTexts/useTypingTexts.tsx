@@ -12,8 +12,8 @@ export const useTypingText = (words:string[], keySpeed = 1000, maxPauseAmount = 
   const [currentWord, setCurrentWord] = useState(words[wordIndex].split(""));
   const [isStopped, setIsStopped] = useState(false);
   const direction = useRef(BACKWARD);
-  const typingInterval = useRef();
-  const letterIndex = useRef();
+  const typingInterval:any = useRef();
+  const letterIndex:any = useRef();
 
   const stop = () => {
     clearInterval(typingInterval.current);
