@@ -58,7 +58,7 @@ const ProtectedContent = () => {
                 <Bylaw />
               </span>
             </div>
-            <p className="mt-8 text-gray-300 dark:text-gray-600">A greate reference for Division Rules,Conference Bylaws, General Committee Rules, Legislative Board Rules...</p>
+            <p className="mt-8 text-gray-300 dark:text-gray-600">A great reference for Division Rules,Conference Bylaws, General Committee Rules, Legislative Board Rules...</p>
           </div>
 
         </div>
