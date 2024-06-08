@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ErrorTrain from "../app/assets/404Train.svg"
-import { headers } from 'next/headers'
+export const runtime = 'edge'
 
 export default async function NotFound() {
   // const headersList = headers()
