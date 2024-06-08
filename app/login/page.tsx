@@ -6,6 +6,8 @@ import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
 import { SubmitButton } from "./submit-button";
 
+export const runtime = 'edge';
+
 export default function Login({
   searchParams,
 }: {

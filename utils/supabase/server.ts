@@ -1,6 +1,8 @@
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
+export const runtime = 'edge';
+
 export const createClient = () => {
   const cookieStore = cookies();
 
