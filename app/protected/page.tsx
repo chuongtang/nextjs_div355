@@ -2,7 +2,7 @@
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
 import ProtectedContent from "@/components/ProtectedPage"
-
+export const runtime = 'edge';
 export default async function ProtectedPage() {
 
   const supabase = createClient();

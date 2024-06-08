@@ -4,7 +4,7 @@ import Train from '../app/assets/FrontPgTrain.png'
 import Image from "next/image";
 import { useTypingText } from "@/components/TypingTexts/useTypingTexts";
 import Footer from "@/components/Footer";
-
+export const runtime = 'edge';
 export default function Index() {
 
   const { word} = useTypingText(
