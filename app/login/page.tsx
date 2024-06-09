@@ -26,7 +26,7 @@ export default function Login({
     });
 
     if (error) {
-      return redirect("/login?message=Could not authenticate user");
+      return redirect("/login?message=Incorrect password or email!");
     }
 
     return redirect("/protected");
@@ -50,7 +50,7 @@ export default function Login({
 
     if (error) {
       console.log(error, "Error from Signing up");
-      return redirect("/login?message=Server Error when register user");
+      return redirect("/login?message=Server busy, please try again later");
     }
 
     return redirect("/login?message=Check email to continue sign in process");
@@ -67,7 +67,7 @@ export default function Login({
           <div className="px-4 py-6 sm:px-8 sm:py-7">
             <div className="text-center">
               <h2 className="text-3xl font-bold text-gray-800">Thanks for visiting</h2>
-              
+
             </div>
 
             <form action="#" method="POST" className="mt-8">
@@ -136,13 +136,14 @@ export default function Login({
                   >
                     Sign Up
                   </SubmitButton>
-                  {searchParams?.message && (
-                    <p className="mt-4 p-4 bg-foreground/10 text-foreground text-center">
-                      {searchParams.message}
-                    </p>
-                  )}
                 </div>
               </div>
+                  {searchParams?.message && (
+                    <p className="relative w-full mt-4 p-2 text-foreground text-center rounded-2xl shadow-lg">
+                      {searchParams.message}
+                      <span className="top-0 right-2 absolute  w-3.5 h-3.5 bg-orange-400 border-2 border-white dark:border-gray-800 rounded-full animate-ping"></span>
+                    </p>
+                  )}
               <p className="mt-8 text-base text-gray-600">Try something else? <Link href="/" title="" className="text-blue-600 transition-all duration-200 hover:underline hover:text-blue-700">Go back</Link></p>
             </form>
           </div>
