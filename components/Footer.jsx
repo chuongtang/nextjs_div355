@@ -1,4 +1,4 @@
-import React from 'react'
+import { Popover, PopoverTrigger, PopoverContent, Button } from "@nextui-org/react";
 
 const Footer = () => {
   return (
@@ -8,12 +8,26 @@ const Footer = () => {
           © Copyright 2024 📜 TCRC Division 355
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-        <p className="text-center text-xs text-gray-500 lg:mt-0 lg:text-right">
-          
-           Built by <a href="https://chuongtang.com"
-             className='underline italic decoration-yellow-500 decoration-2 text-shadow-xs mr-6'
-           target="_blank">an avid learner</a>
-       </p>
+          <p className="text-center text-sm text-gray-500 lg:mt-0 lg:text-right mr-2">
+
+            Built by
+            {/* <a href="https://chuongtang.com"
+              className='underline italic decoration-yellow-500 decoration-2 text-shadow-xs mr-6'
+              target="_blank">an avid learner</a> */}
+          </p>
+          <Popover placement="bottom-end" color="default" >
+            <PopoverTrigger>
+              <div variant="flat" className="cursor-pointer text-sm underline italic decoration-yellow-500 decoration-2 text-shadow-xs mr-6">
+                an avid learner
+              </div>
+            </PopoverTrigger>
+            <PopoverContent>
+              <div className="px-1 py-2">
+                <div className="text-small font-bold">📧Comments or suggestions?</div>
+                <div className="text-tiny">Please send it to <span className="underline italic">email@chuongtang.com</span></div>
+              </div>
+            </PopoverContent>
+          </Popover>
         </span>
       </div>
     </footer>
