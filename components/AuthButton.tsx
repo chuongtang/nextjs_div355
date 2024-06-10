@@ -20,8 +20,8 @@ export default async function AuthButton() {
   return (
 
 
-    <div>
-      {user ? <div className="flex items-center mr-6 mt-2 gap-4">
+    <div className="mx-4 my-2">
+      {user ? <div className="flex items-center gap-4">
         <form action={signOut}>
           <button title=" 📤Click to sign out " className="inline-flex bg-amber-500 border-0 rounded-lg p-2 ml-2 text-white">
             Logout
@@ -38,7 +38,7 @@ export default async function AuthButton() {
           </Link>
         </button>
       }
-    </div >
+    </div>
 
   )
 }

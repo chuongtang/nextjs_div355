@@ -1,6 +1,6 @@
 "use client"
 
-import Train from '../app/assets/FrontPgTrain.png'
+import Train from '../app/assets/FrontPgTrain.webp'
 import Image from "next/image";
 import { useTypingText } from "@/components/TypingTexts/useTypingTexts";
 import Footer from "@/components/Footer";
@@ -43,6 +43,7 @@ export default function Index() {
               <div>
                 <Image className="w-full h-full hover:grayscale"
                   src={Train} alt="Train photo"
+                  priority
                 />
               </div>
             </div>

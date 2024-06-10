@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link";
-import LoginTrain from "../assets/LoginTrain.jpg"
+import LoginTrain from "../assets/LoginTrain.webp"
 import { headers } from "next/headers";
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
@@ -58,7 +58,7 @@ export default function Login({
   return (
     <section className="relative h-screen py-10 bg-gray-900 sm:py-16 lg:py-24">
       <div className="absolute inset-0">
-        <Image className="object-cover w-full h-full" src={LoginTrain} alt="" />
+        <Image className="object-cover w-full h-full" src={LoginTrain} alt="" priority />
       </div>
       <div className="absolute inset-0 bg-gray-900/20"></div>
 

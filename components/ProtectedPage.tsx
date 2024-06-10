@@ -1,9 +1,9 @@
 "use client"
 import Image from "next/image"
-import TBD1 from '@/app/assets/TBD1.jpg'
-import TBD2 from '@/app/assets/TBD2.jpg'
-import TBD3 from '@/app/assets/TBD3.jpg'
-import TBD4 from '@/app/assets/TBD4.jpg'
+import TBD1 from '@/app/assets/TBD1.webp'
+import TBD2 from '@/app/assets/TBD2.webp'
+import TBD3 from '@/app/assets/TBD3.webp'
+import TBD4 from '@/app/assets/TBD4.webp'
 import Exec from "@/components/Exec"
 import Bylaw from "@/components/Bylaw"
 import Seniority from "@/components/Seniority"
